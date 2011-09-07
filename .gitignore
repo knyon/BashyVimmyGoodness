@@ -1,0 +1,8 @@
+.*
+*~
+!.vim*
+!.vim/*
+!.vim/plugins/*
+!.vim/docs/*
+!.bashrc
+!.

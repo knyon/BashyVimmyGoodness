@@ -3,12 +3,13 @@
 "And from http://spf13.com/post/ultimate-vim-config (Sept 14, 2010)
 
 set nocompatible
-colorscheme ir_black
+colorscheme molokai
 noremap ;; :%s:\v::<Left><Left>
 noremap ;l :%s:::<Left>
 nnoremap <silent> <F2> :TlistToggle<CR>
 map <F3> :NERDTreeToggle<CR>
 set noexrc
+set novb
 
 syntax on
 filetype plugin on
@@ -21,10 +22,14 @@ set linebreak
 set backspace=indent,eol,start
 set fileformats=unix,dos,mac
 set noerrorbells
-set guifont=DejaVu\ Sans\ Mono:h12
+set guifont=DejaVu\ Sans\ Mono\ 10
 set relativenumber
 if has("gui_running")
     set guioptions=-t
+    winpos 0 500
+    set lines=30
+    set columns=260
+    colo ir_black
 endif
 
 set nojoinspaces "Makes it so that two spaces after a period are not inserted on a join. Feb 28, 2011
