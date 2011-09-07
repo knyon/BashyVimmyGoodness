@@ -1,8 +1,12 @@
 .*
 *~
+[A-Z]*
+*.log
 !.vim*
 !.vim/*
 !.vim/plugins/*
 !.vim/docs/*
 !.bashrc
 !.
+yankring_history_v2.txt
+.viminfo
