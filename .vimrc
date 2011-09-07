@@ -9,7 +9,6 @@ noremap ;l :%s:::<Left>
 nnoremap <silent> <F2> :TlistToggle<CR>
 map <F3> :NERDTreeToggle<CR>
 set noexrc
-set novb
 
 syntax on
 filetype plugin on
@@ -29,7 +28,7 @@ if has("gui_running")
     winpos 0 500
     set lines=30
     set columns=260
-    colo ir_black
+    set novb
 endif
 
 set nojoinspaces "Makes it so that two spaces after a period are not inserted on a join. Feb 28, 2011
@@ -73,14 +72,13 @@ vmap > >gv
 vmap < <gv
 nnoremap Y y$
 
-
 nnoremap <leader><tab> <C-w><C-v><C-w>w:Scratch<cr>
 nmap <silent> <leader>nu :call NumberToggle()<CR> 
 
 function! NumberToggle() 
     if &number 
-        setlocal relativenumber 
+        set relativenumber 
     else 
-        setlocal number 
+        set number 
     endif 
 endfunction 
