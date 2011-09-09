@@ -21,15 +21,15 @@ set linebreak
 set backspace=indent,eol,start
 set fileformats=unix,dos,mac
 set noerrorbells
-set guifont=DejaVu\ Sans\ Mono\ 10
 set relativenumber
 if has("gui_running")
     set guioptions=-t
+    set guifont=DejaVu\ Sans\ Mono\ 10
     winpos 0 500
     set lines=30
     set columns=260
-    set novb
 endif
+set novb
 
 set nojoinspaces "Makes it so that two spaces after a period are not inserted on a join. Feb 28, 2011
 
@@ -41,9 +41,8 @@ set laststatus=2
 set matchtime=5
 set hlsearch
 set nostartofline
-set visualbell
 set ruler
-set scrolloff=10
+set scrolloff=5
 set showmatch
 set sidescrolloff=10
 set showcmd
