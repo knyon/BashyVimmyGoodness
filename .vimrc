@@ -10,6 +10,10 @@ nnoremap <silent> <F2> :TlistToggle<CR>
 map <F3> :NERDTreeToggle<CR>
 set noexrc
 
+let NERDTreeQuitOnOpen=1
+let NERDTreeShowBookmarks=1
+let NERDTreeWinSize=40
+
 syntax on
 filetype plugin on
 filetype indent on   "Automatically detect file types
@@ -28,6 +32,8 @@ if has("gui_running")
     winpos 0 500
     set lines=30
     set columns=260
+else
+    set t_Co=256
 endif
 set novb
 
@@ -81,3 +87,15 @@ function! NumberToggle()
         set number 
     endif 
 endfunction 
+
+nmap SQ <ESC>:mksession! ~/.vim/Session.vim<CR>:wqa<CR>
+
+function! RestoreSession()
+    if argc() == 0 "vim called without arguments
+          execute 'source ~/.vim/Session.vim'
+    end
+endfunction
+
+autocmd VimEnter * call RestoreSession()
+
+autocmd FileType java setlocal keywordprg=~/.local/bin/javadocs.sh
