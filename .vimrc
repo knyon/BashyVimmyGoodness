@@ -89,13 +89,4 @@ function! NumberToggle()
 endfunction 
 
 nmap SQ <ESC>:mksession! ~/.vim/Session.vim<CR>:wqa<CR>
-
-function! RestoreSession()
-    if argc() == 0 "vim called without arguments
-          execute 'source ~/.vim/Session.vim'
-    end
-endfunction
-
-autocmd VimEnter * call RestoreSession()
-
-autocmd FileType java setlocal keywordprg=~/.local/bin/javadocs.sh
+nmap SS <ESC>:so ~/.vim/Session.vim<CR>
