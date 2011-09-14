@@ -8,6 +8,6 @@
 !.vim/docs/*
 !.bashrc
 !.i3
-!.
+!.Xdefaults
 yankring_history_v2.txt
 .viminfo
