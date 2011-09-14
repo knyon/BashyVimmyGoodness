@@ -7,6 +7,7 @@
 !.vim/plugins/*
 !.vim/docs/*
 !.bashrc
+!.i3
 !.
 yankring_history_v2.txt
 .viminfo
