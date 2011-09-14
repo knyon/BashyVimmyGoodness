@@ -67,6 +67,8 @@
 :CommandT	command-t.txt	/*:CommandT*
 :CommandTBuffer	command-t.txt	/*:CommandTBuffer*
 :CommandTFlush	command-t.txt	/*:CommandTFlush*
+:DeleteNote	notes.txt	/*:DeleteNote*
+:IndexTaggedNotes	notes.txt	/*:IndexTaggedNotes*
 :Loremipsum	loremipsum.txt	/*:Loremipsum*
 :Loreplace	loremipsum.txt	/*:Loreplace*
 :NERDTree	NERD_tree.txt	/*:NERDTree*
@@ -75,6 +77,12 @@
 :NERDTreeFromBookmark	NERD_tree.txt	/*:NERDTreeFromBookmark*
 :NERDTreeMirror	NERD_tree.txt	/*:NERDTreeMirror*
 :NERDTreeToggle	NERD_tree.txt	/*:NERDTreeToggle*
+:Note	notes.txt	/*:Note*
+:NoteFromSelectedText	notes.txt	/*:NoteFromSelectedText*
+:RecentNotes	notes.txt	/*:RecentNotes*
+:RelatedNotes	notes.txt	/*:RelatedNotes*
+:SearchNotes	notes.txt	/*:SearchNotes*
+:ShowTaggedNotes	notes.txt	/*:ShowTaggedNotes*
 :TBrowseOutput	tlib.txt	/*:TBrowseOutput*
 :TKeyArg	tlib.txt	/*:TKeyArg*
 :TLet	tlib.txt	/*:TLet*
@@ -98,6 +106,7 @@
 :TlistUndebug	taglist.txt	/*:TlistUndebug*
 :TlistUnlock	taglist.txt	/*:TlistUnlock*
 :TlistUpdate	taglist.txt	/*:TlistUpdate*
+:searchnotes-understands-tags	notes.txt	/*:searchnotes-understands-tags*
 Alph	latexhelp.txt	/*Alph*
 Alt-B	latex-suite.txt	/*Alt-B*
 Alt-C	latex-suite.txt	/*Alt-C*
@@ -736,6 +745,12 @@ g:loremipsum_files	loremipsum.txt	/*g:loremipsum_files*
 g:loremipsum_marker	loremipsum.txt	/*g:loremipsum_marker*
 g:loremipsum_paragraph_template	loremipsum.txt	/*g:loremipsum_paragraph_template*
 g:loremipsum_words	loremipsum.txt	/*g:loremipsum_words*
+g:notes_directory	notes.txt	/*g:notes_directory*
+g:notes_indexfile	notes.txt	/*g:notes_indexfile*
+g:notes_indexscript	notes.txt	/*g:notes_indexscript*
+g:notes_shadowdir	notes.txt	/*g:notes_shadowdir*
+g:notes_suffix	notes.txt	/*g:notes_suffix*
+g:notes_tagsindex	notes.txt	/*g:notes_tagsindex*
 g:snippets_dir	snipMate.txt	/*g:snippets_dir*
 g:snips_author	snipMate.txt	/*g:snips_author*
 g:stakeholders#def	stakeholders.txt	/*g:stakeholders#def*
@@ -1304,6 +1319,13 @@ matn!	latexhelp.txt	/*matn!*
 minipage	latexhelp.txt	/*minipage*
 multi_snip	snipMate.txt	/*multi_snip*
 multiple-items-example	yankring.txt	/*multiple-items-example*
+notes-commands	notes.txt	/*notes-commands*
+notes-contact	notes.txt	/*notes-contact*
+notes-install-usage	notes.txt	/*notes-install-usage*
+notes-license	notes.txt	/*notes-license*
+notes-options	notes.txt	/*notes-options*
+notes-references	notes.txt	/*notes-references*
+notes.txt	notes.txt	/*notes.txt*
 notitlepage	latexhelp.txt	/*notitlepage*
 o_sp	tlib.txt	/*o_sp*
 onecolumn	latexhelp.txt	/*onecolumn*

@@ -10,9 +10,9 @@ nnoremap <silent> <F2> :TlistToggle<CR>
 map <F3> :NERDTreeToggle<CR>
 set noexrc
 
-let NERDTreeQuitOnOpen=1
 let NERDTreeShowBookmarks=1
 let NERDTreeWinSize=40
+let Tlist_WinWidth=30
 
 syntax on
 filetype plugin on
@@ -29,9 +29,6 @@ set relativenumber
 if has("gui_running")
     set guioptions=-t
     set guifont=DejaVu\ Sans\ Mono\ 10
-    winpos 0 500
-    set lines=30
-    set columns=260
 else
     set t_Co=256
 endif

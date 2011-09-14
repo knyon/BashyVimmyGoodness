@@ -120,4 +120,5 @@ bind Mod1+Shift+27 restart
 # (i3-wsbar) or i3-msg (can be used to "remote-control" i3) to work.
 ipc-socket ~/.i3/ipc.sock
 
-bind Mod1+54 exec i3lock -c 0000FF -i ~/.i3/bsod.png
+bind Mod1+53 exec i3lock -c 0000FF -i ~/.i3/bsod.png
+bind Mod1+54 exec date | dzen2 -p 5
