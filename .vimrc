@@ -13,6 +13,7 @@ set noexrc
 let NERDTreeShowBookmarks=1
 let NERDTreeWinSize=40
 let Tlist_WinWidth=30
+let Tlist_GainFocus_On_ToggleOpen=1
 
 syntax on
 filetype plugin on
