@@ -86,5 +86,5 @@ function! NumberToggle()
     endif 
 endfunction 
 
-nmap SQ <ESC>:mksession! ~/.vim/Session.vim<CR>:wqa<CR>
-nmap SS <ESC>:so ~/.vim/Session.vim<CR>
+nmap SS <ESC>:mksession! ~/.vim/Session.vim<CR>
+nmap SO <ESC>:so ~/.vim/Session.vim<CR>

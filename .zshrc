@@ -6,6 +6,9 @@
 ######################################################################
 
 xset r rate 300 50
+set -o vi
+source /etc/zsh_command_not_found
+source $HOME/.local/bin/bashmarks.sh
 
 # next lets set some enviromental/shell pref stuff up
 # setopt NOHUP
