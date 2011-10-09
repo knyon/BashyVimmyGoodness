@@ -18,7 +18,7 @@ URxvt*saveLines: 12000
 URxvt*foreground: White
 
 # background color (prior to tinting) (default is white)
-URxvt*background: midnightblue
+URxvt*background: black
 
 # Xft (X FreeType) with Bitstream, DejaVu, Liberation, or Terminus fonts:
 #  Fedora/debian packages: libXft/libxft2 
@@ -33,8 +33,8 @@ URxvt*background: midnightblue
 #
 # Xft: DejaVu fonts
 #  Fedora/debian packages: dejavu-sans-mono-fonts/ttf-dejavu 
-URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
-URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+URxvt*font: xft:DejaVu Sans Mono:pixelsize=14:antialias=true:hinting=true
+URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=14:antialias=true:hinting=true
 #
 # Xft: Liberation fonts
 #  Fedora/debian packages: liberation-mono-fonts/ttf-liberation
@@ -69,6 +69,6 @@ URxvt*scrollstyle: rxvt
 
 #url launching
 URxvt.perl-ext-common: default,matcher
-URxvt.urlLauncher: chromium-browser
+URxvt.urlLauncher: open
 URxvt.matcher.button: 1
 URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
