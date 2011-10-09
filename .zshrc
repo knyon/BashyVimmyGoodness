@@ -5,10 +5,11 @@
 # 
 ######################################################################
 
-xset r rate 300 50
+#xset r rate 300 50
+#source /etc/zsh_command_not_found
 set -o vi
-source /etc/zsh_command_not_found
 source $HOME/.local/bin/bashmarks.sh
+cd $HOME
 
 # next lets set some enviromental/shell pref stuff up
 # setopt NOHUP
@@ -81,7 +82,7 @@ alias slrn="slrn -n"
 alias man='LC_ALL=C LANG=C man'
 alias f=finger
 alias ll='ls -al'
-alias ls='ls --color=auto '
+alias ls='ls -G '
 alias offlineimap-tty='offlineimap -u TTY.TTYUI'
 alias hnb-partecs='hnb $HOME/partecs/partecs-hnb.xml'
 alias rest2html-css='rst2html --embed-stylesheet --stylesheet-path=/usr/share/python-docutils/s5_html/themes/default/print.css'
@@ -199,3 +200,5 @@ zstyle ':completion:*:ssh:*' tag-order \
 zstyle ':completion:*:ssh:*' group-order \
    hosts-domain hosts-host users hosts-ipaddr
 zstyle '*' single-ignored show
+
+set +B
