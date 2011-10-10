@@ -10,6 +10,10 @@ set -o vi
 source /etc/zsh_command_not_found
 source $HOME/.local/bin/bashmarks.sh
 
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
 # next lets set some enviromental/shell pref stuff up
 # setopt NOHUP
 #setopt NOTIFY
